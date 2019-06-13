@@ -1,0 +1,23 @@
+{
+  "name": "vue-chat-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsonwebtoken": "^8.5.0",
+    "koa": "^2.5.2",
+    "koa-body": "^4.0.4",
+    "koa-router": "^7.4.0",
+    "koa2-cors": "^2.0.6",
+    "mysql2": "^1.6.4",
+    "sequelize": "^4.42.0",
+    "sha1": "^1.1.1",
+    "ws": "^7.0.0"
+  }
+}
