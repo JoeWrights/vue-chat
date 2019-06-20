@@ -1,0 +1,328 @@
+.el-container {
+  width: 900px;
+  height: 100vh;
+  position: relative;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .2);
+  background: url('http://pr2l68ies.bkt.clouddn.com/people-talking-illustration-vector.png') no-repeat center;
+}
+
+.el-header {
+  color: #333;
+  text-align: center;
+  font-size: 12px;
+  height: 50px !important;
+  line-height: 50px;
+  border-bottom: 1px solid #d6d6d6;
+  background-color: #eee;
+}
+
+.el-footer {
+  height: 28vh !important;
+  border-top: 1px solid #d6d6d6;
+  background: #eee;
+}
+
+.send-option {
+  height: 30px;
+  line-height: 30px;
+  display: flex;
+  width: 100%;
+}
+
+.input-area {
+  resize: none;
+  width: 622px;
+  outline: none;
+  border: none;
+  background: #eee;
+}
+
+.prompt-info {
+  position: absolute;
+  bottom: 20px;
+  right: 96px;
+  color: #888;
+}
+
+.send-btn {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.leave-enter-active, .leave-leave-active {
+  transition: all 1.2s;
+}
+
+@keyframes appear-animation {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.appear-enter-active {
+  animation: appear-animation .5s;
+}
+.appear-leave-active {
+  animation: appear-animation .5s reverse;
+}
+
+.friend-drop {
+  padding: 8px;
+  position: absolute;
+  width: 97.3%;
+  top: 50px;
+  left: 0;
+  background: #eee;
+  border-bottom: 1px solid #d6d6d6;
+  display: none;
+
+  .chat-members {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .friend-avatar {
+    width: 50px;
+    margin: 0 5px;
+    padding: 0 10px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    div {
+      font-size: 12px;
+      color: #2e3641;
+      text-align: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
+
+.toggle {
+  display: block;
+  z-index: 9999;
+}
+
+.chat-body {
+  height: 66vh;
+  overflow: auto;
+  background: #eee;
+
+  .chat-other {
+    margin-top: 16px;
+
+    .chat-time {
+      font-size: 12px;
+      color: #888;
+    }
+
+    .chat-section {
+      display: flex;
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .chat-msg {
+        min-width: 20px;
+        max-width: 500px;
+        margin-top: 6px;
+        padding: 10px 10px 4px;
+        background: #fff;
+        border-radius: 4px;
+        font-size: 14px;
+        bottom: -16px;
+        left: 48px;
+        word-wrap: break-word;
+        word-break: break-all;
+        min-height: 25px;
+      }
+    }
+  }
+
+  .chat-self {
+    margin-top: 16px;
+
+    .chat-time {
+      font-size: 12px;
+      color: #888;
+      text-align: right;
+    }
+
+    .chat-section {
+      display: flex;
+      flex-direction: row-reverse;
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .chat-msg {
+        min-width: 20px;
+        max-width: 500px;
+        margin-top: 6px;
+        padding: 10px 10px 4px;
+        background: #b2e281;
+        border-radius: 4px;
+        font-size: 14px;
+        bottom: -16px;
+        left: 48px;
+        word-wrap: break-word;
+        word-break: break-all;
+        min-height: 25px;
+      }
+    }
+  }
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  .warp {
+    width: 900px;
+    height: 100vh;
+
+    .aside {
+      width: 240px;
+      height: 100%;
+      box-shadow: 0 0 1px rgba(0, 0, 0, .2);
+      background: #2e3641;
+
+      .sub-aside {
+        width: 240px;
+        background: #2E3238;
+
+        .user-info-card {
+          padding: 16px;
+
+          .user-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .user-avatar {
+              height: 50px;
+              display: flex;
+              align-items: center;
+
+              img {
+                width: 50px;
+                height: 50px;
+                margin-right: 12px;
+                border-radius: 4px;
+              }
+
+              span {
+                width: 106px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                color: #fff;
+              }
+            }
+          }
+
+          .search-input {
+            margin-top: 12px;
+
+            .tabs {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+              align-items: center;
+              margin-top: 14px;
+
+              .tab {
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+
+                span {
+                  width: 20px;
+                  height: 20px;
+                  line-height: 20px;
+                  display: inline-block;
+                  position: absolute;
+                  top: 110px;
+                  left: 196px;
+                  background: rgb(255, 0, 0);
+                  border-radius: 50%;
+                  text-align: center;
+                  color: #fff;
+                  font-size: 12px;
+                }
+
+                .icon {
+                  width: 30px;
+                  height: 30px;
+
+                  &.active {
+                    width: 40px;
+                    height: 40px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .chat-item {
+        height: 50px;
+        padding: 8px 12px 8px;
+        font-size: 13px;
+        border-bottom: 1px solid #292c33;
+        color: #fff;
+
+        &.active {
+          background: #3a3f45;
+        }
+
+        .friend-info {
+          .friend-avatar img {
+            width: 50px;
+            height: 50px;
+            margin-right: 8px;
+            border-radius: 4px;
+          }
+
+          .add-friend {
+            position: relative;
+            left: 180px;
+            bottom: 36px;
+
+            &.notification {
+              left: 170px;
+            }
+
+            .icon {
+              cursor: pointer;
+
+              &.delete {
+                margin-left: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
