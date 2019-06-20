@@ -7,7 +7,7 @@ const filters = {
   date,
 };
 
-Object.keys(filters).forEach(key => {
+Object.keys(filters).forEach((key) => {
   Vue.filter(snakeCase(key), filters[key]);
 });
 

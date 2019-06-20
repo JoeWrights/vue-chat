@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="login-box">
-      <img src="http://pr2l68ies.bkt.clouddn.com/people-talking-illustration-vector.png" alt="" />
+      <img src="../../assets/People-Talking-Illustration.png" alt="" />
       <el-tabs
         v-model="activeName"
         @tab-click="handleClick">
@@ -114,7 +114,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: url('http://pr2l68ies.bkt.clouddn.com/people-talking-illustration-vector.png') no-repeat center;
+  background: url('../../assets/People-Talking-Illustration.png') no-repeat center;
 
   .login-box{
     width: 300px;

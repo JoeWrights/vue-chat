@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import { mapGetters } from 'vuex';
 import { first, uniqBy } from 'lodash';
-import { emojiList } from '@/core/constant/constant';
+import emojiList from '@/core/constant/constant';
 import AuthService from '@/core/services/auth.service';
 import ChatService from '@/core/services/chat.service';
 import PrivateChat from '@/components/private-chat.vue';
